@@ -725,13 +725,44 @@
         </a>
         <a href="https://www.linkedin.com/in/prasanthmurugesan-devops" target="_blank" class="contact-link">
           <span class="cli">in</span> linkedin.com/in/prasanthmurugesan-devops
-        </a>
+        <!-- </a>
         <a href="https://github.com/" target="_blank" class="contact-link">
           <span class="cli">⌥</span> github.com/prasanth-m (update your handle)
+        </a> -->
+        <a href="https://www.naukri.com/mnjuser/profile?id=&altresid=" 
+        target="_blank" 
+        class="contact-link">
+        <span class="cli">💼</span> Naukri Profile
         </a>
       </div>
     </div>
-    <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+    <form class="contact-form reveal"
+      action="https://formsubmit.co/prasanth.murugesan@yahoo.com"
+      method="POST">
+
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New Message From Portfolio Website">
+
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" name="name" required placeholder="Your name" />
+  </div>
+
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" name="email" required placeholder="you@company.com" />
+  </div>
+
+  <div class="form-group">
+    <label>Message</label>
+    <textarea name="message" required placeholder="Tell me about your project..."></textarea>
+  </div>
+
+  <button type="submit" class="btn-primary" style="align-self:flex-start;">
+    Send Message
+  </button>
+</form>
+    <!-- <form class="contact-form reveal" onsubmit="handleSubmit(event)">
       <div class="form-group">
         <label>Name</label>
         <input type="text" placeholder="Your name" />
@@ -747,7 +778,7 @@
       <button type="submit" class="btn-primary" style="align-self:flex-start;">Send Message</button>
     </form>
   </div>
-</section>
+</section> -->
 
 <!-- FOOTER -->
 <footer>
@@ -771,14 +802,14 @@
   });
 
   // Contact form
-  function handleSubmit(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('button');
-    const orig = btn.textContent;
-    btn.textContent = 'Message Sent ✓';
-    btn.style.background = 'var(--accent2)';
-    setTimeout(() => { btn.textContent = orig; btn.style.background = ''; e.target.reset(); }, 3000);
-  }
+  // function handleSubmit(e) {
+  //   e.preventDefault();
+  //   const btn = e.target.querySelector('button');
+  //   const orig = btn.textContent;
+  //   btn.textContent = 'Message Sent ✓';
+  //   btn.style.background = 'var(--accent2)';
+  //   setTimeout(() => { btn.textContent = orig; btn.style.background = ''; e.target.reset(); }, 3000);
+  // }
 
   // Active nav
   const secs = document.querySelectorAll('section[id]');
